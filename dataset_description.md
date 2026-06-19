@@ -21,6 +21,7 @@ Before data was imported to power bi, the data was cleaned using sql queries
 
 ## Key Queries
 # YearOverYear
+'''
 WITH YearlySpend AS
 (
 	SELECT
@@ -41,8 +42,10 @@ FROM
 	YearlySpend
 ORDER BY
 	Year
+'''
 
 # Repeat Customer Rate
+'''
 WITH CustomerOrderCount AS 
 (
     SELECT 
@@ -59,3 +62,4 @@ SELECT
     SUM(CASE WHEN TotalInvoices > 1 THEN 1 ELSE 0 END) AS RepeatCustomerCount,
     CAST(SUM(CASE WHEN TotalInvoices > 1 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(DISTINCT CustomerID) AS RepeatCustomerRate
 FROM CustomerOrderCount;
+'''
