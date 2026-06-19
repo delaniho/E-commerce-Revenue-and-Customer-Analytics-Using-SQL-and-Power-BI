@@ -1,11 +1,13 @@
 # E-commerce-Revenue-and-Customer-Analytics-Using-SQL-and-Power-BI
 
+### Revenue Insight Dashboard
 ![Power BI Dashboard Overview](Revenue_Insight.png)
 
+### Customer Analytic Dashboard
 ![Power BI Dashboard Overview](Customer_Stock_Insight.png)
 
 
-This project analyzes an online++retail++ii data to identify revenue trend, customer behavior, product performance and the impact of product returns on overall business performance. 
+This project analyzes an online_retail_II data to identify revenue trend, customer behavior, product performance and the impact of product returns on overall business performance. 
 The goal was to transform raw transactional data into actionable insights that can help business decision-making in sales, inventory planning, revenue optimization and customer retension.
 Tools Used: 
 * SQL Server Management Studio (SSMS)
