@@ -18,3 +18,28 @@ Country: Country name. Nominal. The name of the country where a customer resides
 
 ## Data Cleaning Steps
 Before data was imported to power bi, the data was cleaned using sql queries 
+
+## Key Queries
+# YearOverYear
+WITH YearlySpend AS
+(
+	SELECT
+		Year, SUM(TotalSpend) Revenue
+	FROM
+		Online_All_Tables
+	WHERE
+		Invoice NOT LIKE '%c%' 
+	GROUP BY
+		Year
+)
+
+SELECT
+	Year, Revenue, 
+	ROUND((Revenue - LAG(Revenue) OVER (ORDER BY Year)) * 100 /
+	LAG(Revenue) OVER (ORDER BY Year), 2) YoY_Percent
+FROM
+	YearlySpend
+ORDER BY
+	Year
+
+# Repeat Customer Rate
