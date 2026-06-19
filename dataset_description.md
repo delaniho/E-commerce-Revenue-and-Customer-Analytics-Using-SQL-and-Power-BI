@@ -43,3 +43,19 @@ ORDER BY
 	Year
 
 # Repeat Customer Rate
+WITH CustomerOrderCount AS 
+(
+    SELECT 
+        CustomerID, 
+        COUNT(DISTINCT Invoice) AS TotalInvoices
+    FROM Online_All_Tables
+    WHERE CustomerID IS NOT NULL 
+      AND Invoice NOT LIKE '%C%'
+    GROUP BY CustomerID
+)
+
+SELECT 
+    COUNT(DISTINCT CustomerID) AS TotalCustomers,
+    SUM(CASE WHEN TotalInvoices > 1 THEN 1 ELSE 0 END) AS RepeatCustomerCount,
+    CAST(SUM(CASE WHEN TotalInvoices > 1 THEN 1 ELSE 0 END) AS FLOAT) / COUNT(DISTINCT CustomerID) AS RepeatCustomerRate
+FROM CustomerOrderCount;
