@@ -46,16 +46,16 @@ Revenue Performance:
 * Q4 generated the highest revenue, indicating strong seasonal demand.
 * The United Kingdom contributed the highest revenue among all countries analyzed.
 
-Customer Behavior:
+#### Customer Behavior:
 * 75.41% of customers placed multiple orders during the analysis period, demonstrating strong customer retention and repeat purchasing behavior.
 * Customer 18102 generated the highest revenue among all customers.
 Product Performance:
 * Stock Code 23843 was the most purchased product.
 
-Returns Analysis:
+#### Returns Analysis:
 * The return rate was 24.7%, indicating a significant source of revenue leakage and an opportunity for operational improvement.
   
-Revenue Distribution:
+#### Revenue Distribution:
 * The top 10 customers generated 17.5% of total revenue, suggesting revenue is distributed across a broad customer base rather than being concentrated among a small number of customers.
   
 ### Business Recommendations:
