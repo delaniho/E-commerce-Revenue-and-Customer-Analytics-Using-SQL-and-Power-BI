@@ -7,7 +7,7 @@
 ![Power BI Dashboard Overview](Customer_Stock_Insight.png)
 
 
-This project analyzes an online_retail_II data to identify revenue trend, customer behavior, product performance and the impact of product returns on overall business performance. 
+This project analyzes an online retail II data to identify revenue trend, customer behavior, product performance and the impact of product returns on overall business performance. 
 The goal was to transform raw transactional data into actionable insights that can help business decision-making in sales, inventory planning, revenue optimization and customer retension.
 Tools Used: 
 * SQL Server Management Studio (SSMS)
@@ -22,8 +22,8 @@ Key data preparation activities included:
 * Creating Business metrics
 * preparing data for dashboard reporting
 
-Dashboard Pages
-Revenue_Insight
+## Dashboard Pages
+### Revenue_Insight
 Provides visibility into:
 * Revenue trends over time
 * Quarterly performance
@@ -33,7 +33,7 @@ Provides visibility into:
 * Revenue gains and losses
 * Return rate analysis
 
-Customer_Stock_Insight
+### Customer_Stock_Insight
 Provides visibility into:
 * Customer purchasing behavior
 * Repeat customer analysis
@@ -41,7 +41,7 @@ Provides visibility into:
 * Product demand analysis
 * Stock performance
   
-Key Findings
+### Key Findings
 Revenue Performance:
 * Q4 generated the highest revenue, indicating strong seasonal demand.
 * The United Kingdom contributed the highest revenue among all countries analyzed.
@@ -58,9 +58,25 @@ Returns Analysis:
 Revenue Distribution:
 * The top 10 customers generated 17.5% of total revenue, suggesting revenue is distributed across a broad customer base rather than being concentrated among a small number of customers.
   
-Business Recommendations:
+### Business Recommendations:
 * Increase marketing investment during Q4 to capitalize on seasonal purchasing patterns.
 * Prioritize customer retention strategies because repeat customers represent a significant portion of the customer base.
 * The return rate stands at 24.7%, causing a estimated revenue loss of 4.88 Million Pounds. A 5% reduction in returns through stricter supplier quality control in the UK region would reclaim 244,000 pounds in lost profit margin.  
-* StockCode 23843 is the primary volume driver. I recommend establishing a safety trigger point of X units 45 days prior to Q4 to prevent out-of-stock scenarios durink peak seasonal demand.
+* StockCode 23843 is the primary volume driver. I recommend conducting safety stock analysis for StockCode 23843 prior to Q4 to reduce the risk of stockouts during peak seasonal demand.
 * Continue investing in broad customer acquisition since revenue is not overly dependent on a few customers.
+
+## Technical Skills Demonstrated
+
+### SQL
+- CTEs
+- Window Functions (LAG, DENSE_RANK)
+- Aggregations
+- Customer Cohort Analysis
+- Repeat Customer Analysis
+- Revenue Trend Analysis
+
+### Power BI
+- Data Modeling
+- DAX Measures
+- KPI Dashboards
+- Drill-through Analysis
