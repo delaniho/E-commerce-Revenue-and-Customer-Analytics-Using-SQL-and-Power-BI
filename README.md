@@ -42,7 +42,7 @@ Provides visibility into:
 * Stock performance
   
 ### Key Findings
-Revenue Performance:
+#### Revenue Performance:
 * Q4 generated the highest revenue, indicating strong seasonal demand.
 * The United Kingdom contributed the highest revenue among all countries analyzed.
 
